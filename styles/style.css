@@ -49,8 +49,6 @@ button {
   cursor: pointer;
 }
 
-/* Header */
-
 .header {
   display: flex;
   align-items: flex-start;
@@ -113,8 +111,6 @@ button {
 .header__logo-image {
   display: block;
 }
-
-/* Address */
 
 address {
   font-style: normal;
