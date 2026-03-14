@@ -51,9 +51,9 @@ button {
 
 .header {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 92px var(--pad-x) 44px;
+  justify-content: flex-start;
+  align-items: start;
+  padding: 92px var(--pad-x) 96px;
 }
 
 .header__menu {
@@ -95,7 +95,8 @@ button {
   font-weight: var(--fw-normal);
   color: var(--color-black);
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-underline-position: under;
   white-space: nowrap;
 }
 
@@ -106,6 +107,7 @@ button {
 .header__logo {
   display: block;
   flex-shrink: 0;
+  margin-left: 44px;
 }
 
 .header__logo-image {
@@ -120,13 +122,15 @@ address {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  max-width: 238px;
 }
 
 .address__link {
   font-size: var(--fs-body);
   color: var(--color-black);
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-underline-position: under;
   line-height: 24px;
 }
 
@@ -140,6 +144,7 @@ address {
 
 .header__address {
   padding-top: 3px;
+  margin-left: auto;
 }
 
 .cover {
@@ -151,8 +156,7 @@ address {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 89px;
+  padding: 165px 50px 50px;
 }
 
 .overlay {
@@ -168,21 +172,19 @@ address {
 
 .cover__title {
   position: relative;
-  flex: 1;
   display: grid;
   row-gap: 20px;
-  padding-top: 165px;
   margin: 0;
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-hero);
   letter-spacing: var(--ls-hero);
+  text-transform: uppercase;
+  color: var(--color-white);
 }
 
 .aligned-text {
   display: block;
-  font-size: var(--fs-hero);
-  font-weight: var(--fw-bold);
-  line-height: var(--lh-hero);
-  text-transform: uppercase;
-  color: var(--color-white);
 }
 
 .no-letter-spacing {
@@ -191,23 +193,19 @@ address {
 
 .aligned-text_left {
   justify-self: start;
-  margin-left: var(--pad-x);
 }
 
 .aligned-text_center {
-  justify-self: start;
-  margin-left: 380px;
+  justify-self: center;
 }
 
 .aligned-text_right {
   justify-self: end;
-  margin-right: 19px;
 }
 
 .cover__description {
   position: relative;
-  padding-left: var(--pad-x);
-  padding-right: var(--pad-x);
+  margin-top: 118px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -219,13 +217,15 @@ address {
   font-weight: var(--fw-normal);
   text-transform: uppercase;
   color: var(--color-white);
+  word-spacing: 20px;
 }
 
 .bet-button {
-  width: 241px;
+  width: 243px;
   padding: 13px 24px;
   font-size: var(--fs-md);
   font-weight: var(--fw-medium);
+  line-height: 24px;
   text-transform: uppercase;
   color: var(--color-white);
   background: transparent;
@@ -234,7 +234,7 @@ address {
 }
 
 .lots {
-  padding: 90px var(--pad-x-lots) 0;
+  padding: 180px var(--pad-x-lots) 0;
 }
 
 .lots__heading {
@@ -243,7 +243,7 @@ address {
   text-transform: uppercase;
   color: var(--color-black);
   margin-left: 39px;
-  margin-bottom: 16px;
+  margin-bottom: 27px;
 }
 
 .lots__card-list {
@@ -290,7 +290,8 @@ address {
   font-weight: var(--fw-bold);
   line-height: var(--lh-lot-title);
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-underline-position: under;
   text-transform: uppercase;
   color: var(--color-white);
 }
@@ -312,20 +313,20 @@ address {
   font-weight: var(--fw-normal);
   color: var(--color-black);
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-underline-position: under;
 }
-
-/* About */
 
 .about {
   display: flex;
   align-items: flex-start;
   gap: 71px;
-  padding: 0 var(--pad-x);
+  padding: 0 24px;
 }
 
 .about__logo {
   flex-shrink: 0;
+  margin-left: 47px;
 }
 
 .about__logo-image {
@@ -343,8 +344,9 @@ address {
   font-weight: var(--fw-bold);
   text-transform: uppercase;
   color: var(--color-black);
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
+
 
 .about__text {
   font-size: var(--fs-sm);
@@ -358,10 +360,10 @@ address {
 }
 
 .footer {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 130px var(--pad-x) 60px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  padding: 180px var(--pad-x) 82px;
 }
 
 .footer__menu {
@@ -388,7 +390,8 @@ address {
   color: var(--color-black);
   line-height: 21px;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-underline-position: under;
 }
 
 .footer__menu-link_active {
@@ -400,6 +403,7 @@ address {
   align-items: center;
   gap: 48px;
   list-style: none;
+  justify-self: end;
 }
 
 .footer__social-list-item {
