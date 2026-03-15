@@ -205,7 +205,7 @@ address {
 
 .cover__description {
   position: relative;
-  margin-top: 118px;
+  margin-top: 106px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -221,7 +221,7 @@ address {
 }
 
 .bet-button {
-  width: 243px;
+  width: 256px;
   padding: 13px 24px;
   font-size: var(--fs-md);
   font-weight: var(--fw-medium);
@@ -262,7 +262,7 @@ address {
 }
 
 .card {
-  height: 596px;
+  min-height: 596px;
   background-size: cover;
   background-position: center;
   position: relative;
